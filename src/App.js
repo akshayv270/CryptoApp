@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import {BrowserRouter as Router,Routes,Route,Navigate} from "react-router-dom"
 import './App.css';
 import Coins from "./componets/Coins";
 import Header from "./componets/Header";

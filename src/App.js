@@ -6,6 +6,7 @@ import Home from "./componets/Home";
 import Exchanges from "./componets/Exchanges"
 import CoinDetails from "./componets/CoinDetails"
 import Footer from "./componets/Footer"
+import NotFound from "./componets/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
         <Route path="/coins" element={<Coins />} />
         <Route path="/exchanges" element={<Exchanges />} />
         <Route path="/coin/:id" element={<CoinDetails />} />
+           <Route path="/not-found" element={<NotFound />} />
+          <Route path="*" element={<Navigate replace to="/not-found" />} />
+
+        
 
         
       </Routes>

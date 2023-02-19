@@ -10,8 +10,9 @@ import NotFound from "./componets/NotFound";
 
 function App() {
   return (
-      <Header />
+    
    <Router>
+      <Header />
   
       <Routes>
         <Route path="/" element={<Home />} />
